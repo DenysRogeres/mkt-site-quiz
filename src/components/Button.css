@@ -1,0 +1,27 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Aumenta o botão para 110% do tamanho original */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.myButton {
+   background-color: #ffcc00; /* Cor de fundo amarela */
+   border: none; /* Sem borda */
+   border-radius: 5px; /* Bordas arredondadas */
+   color: black; /* Cor do texto */
+   font-size: 24px; /* Tamanho da fonte */
+   font-weight: bold; /* Peso da fonte */
+   padding: 10px 20px; /* Padding para aumentar o botão */
+   text-transform: uppercase; /* Texto em caixa alta */
+   cursor: pointer; /* Cursor do tipo pointer */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efeito 3D */
+   transition: background-color 0.3s, transform 0.1s; /* Transição suave para hover e click */
+
+   animation: pulse 2s infinite ease-in-out; /* Aplica a animação ao botão */
+}
