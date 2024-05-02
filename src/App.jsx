@@ -6,12 +6,14 @@ import { Terms } from './pages/Terms';
 import { Balmorex } from "./pages/Balmorex";
 import { Vsl } from "./pages/VSL/Vsl";
 import { Home } from './pages/Home';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 function App() {
 
   return (
     <>
+      <SpeedInsights />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
