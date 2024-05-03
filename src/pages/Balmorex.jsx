@@ -3,6 +3,7 @@ import { Header } from "../components/Header"
 import { VideoSection } from "../components/VideoSection"
 import { TextSection } from "../components/TextSection"
 import { Footer } from "../components/Footer"
+import { ClickMagickTracker } from '../components/ClickMagicTracker';
 
 export function Balmorex() {
 
@@ -45,6 +46,7 @@ export function Balmorex() {
 
    return (
       <>
+         <ClickMagickTracker />
          <Header />
          <VideoSection vagas={number}/>
          <TextSection vagas={number}/>
