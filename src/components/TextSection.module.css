@@ -16,14 +16,33 @@ p {
    padding: 2rem 1.3rem 1rem 1.3rem;
 
    display: flex;
-   justify-content: space-between;
+
+  flex-direction: row;
+  justify-content: space-around;
 }
 
+.imgcontent {
+   align-items: center;
+   justify-content: center;
+
+   display: flex;
+   align-items: center;
+ }
+
+@media (max-width: 600px) {
+   .textsection {
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+   }
+   .img {
+      align-self: center;
+    }
+ }
+
 .img {
-   width: 15vw;
+   width: 50%;
    box-shadow: 0 0 10px rgba(36, 36, 36, 0.7);
-   margin-left: 3rem;
-   margin-right: 3rem;
    border-radius: 3px;
 }
 
@@ -56,4 +75,5 @@ p {
 
 .space {
    padding-bottom: 1rem;
+   text-align: center;
 }

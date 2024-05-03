@@ -1,8 +1,7 @@
 import styles from './TextSection.module.css';
-import glassBackPain from '../assets/glass-back-pain.png';
 import { Button } from './Button';
 
-export function TextSection() { 
+export function TextSection({ vagas }) { 
    return (
       <>
       <div className={`${styles.textsection} ${styles.text}`}>
@@ -11,11 +10,9 @@ export function TextSection() {
             <p><strong>A life where getting out of bed in the morning is no longer a challenge, where playing with your grandchildren or enjoying a simple walk in the park is no longer a painful struggle.</strong></p>
             <p>Imagine for a moment, being able to walk, move and live free from the pain that has been your constant companion.</p>
          </div>
-      
-         <div>
-            <img src={glassBackPain} alt="Back Pain" className={styles.img}/>
+         <div className={styles.imgcontent}>
+            <img src="https://res.cloudinary.com/dvmbmpthe/image/upload/v1714706561/glass-back-pain_eoelnz.png" alt="Back Pain" className={styles.img}/>
          </div>
-
       </div>
 
       <div className={styles.title}>
@@ -32,8 +29,7 @@ export function TextSection() {
          <p><strong>Click the button below</strong> and see how me and more than <strong>77,383 people</strong> had our lives transformed with this incredible <strong>*20-Second Rub Ritual*.</strong></p>
       
          <div className={styles.centerButton}>
-            <span className={styles.space}>Spots Available To Attend Free Presentation: <strong><span className={styles.spots}>3</span></strong> spots.</span>
-
+            <span className={styles.space}>Spots Available To Attend Free Presentation: <strong><span className={styles.spots}>{vagas}</span></strong> spots.</span>
             <Button />
          </div>
       </div>
